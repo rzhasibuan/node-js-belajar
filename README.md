@@ -45,5 +45,46 @@ untuk melalukan installasi node.js bisa langgsung saja mengunjungin halaman situ
 Repl itu sendiri adalah menjalankan script node.js pada commant line / bash 
 
 ### Menjalankannya 
+langsung saja ketik pada terminal 
+```
+$ node 
+```
+```
+> 
+```
+setelah masuk kedalam repl node.js nya kita bisa mengetikkan sintak javascript contohnya dengan mengitikkan sintak-sintak sederhana seperti ini
+``` 
+const nama = "reza" 
+```
+setelah itu bisa langsung tekan enter maka akan tampil seperti ini 
+```> ``` itu adalah yang dinamakan loop atau bisa di artikan mengulang kembali perintahnya. jika kita ingin melihat nilai dari sintak yang kita buat tadi maka langsung saja seperti ini 
+``` 
+> nama 
+```
+``` 
+reza 
+```
+maka akan tampil seperti di atas
+terus bagaimana jika kita memiliki data dari luar dan ingin menjalankannya di dalam repl ? 
+caranya adalah dengan mengunakan .load 
+```
+> .load namafile.js
+> .load belajarnode.js
 
-```$ node ```
+```
+
+### .save 
+berfungsi jika kita ingin menyimpan sintak yang telah kita buat di repl dengan cara 
+``` 
+> .save namafile.js 
+> .save belajarnode.js 
+
+```
+
+### .exit
+berfungsi untuk keluar dari repl 
+### .break 
+untuk mengakhirin sebuah aktivias yang sedang dilakukan 
+### .clear 
+untuk membersihkan sebuah aktivitas yang sedang dilakukan 
+
