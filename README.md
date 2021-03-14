@@ -37,3 +37,13 @@ Library c++ ini bertugas mengelola operasi asynchronous I/O(input/output) di nod
 Ada dua jenis design pattern yang digunakan oleh node.js, yaitu object pool dan facade. berikut penjelasannya :
 + Object pool - design pettern berisi kumpulan objek yang dapat digunakan untuk task tertentu 
 + facede - design pattern yang memberikan tampilan antaramuka untuk body kode
+
+## Installasi node.js dan npm 
+untuk melalukan installasi node.js bisa langgsung saja mengunjungin halaman situs resminya di https://nodejs.org/en/ 
+
+## REPL (Read Eval Print Loop)
+Repl itu sendiri adalah menjalankan script node.js pada commant line / bash 
+
+### Menjalankannya 
+
+```$ node ```
