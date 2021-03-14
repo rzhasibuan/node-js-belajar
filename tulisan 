@@ -1,0 +1,50 @@
+belajar nodeJS 
+
+# Apa itu nodeJS 
+nodeJS adalah runtime dimana kita bisa menjalankan javascript 
+# karakteristik nodeJS 
+- asynchronous & event driven
+- non-blocking 
+- single threaded but highly scalable
+- cross platform
+- mit license 
+- npm 
+# utama nodeJS
+- akses file system 
+- buffer 
+- http & https
+- repl 
+- console 
+- cripto 
+- zlib
+
+
+
+# Arsitekru nodeJS
+# Instalasi Konfigurasi & menjalankan nodeJS
+# NPM
+
+
+###### REPL (read eval print loop) ########
+repl itu sendiri adalah menjalankan node js pada commant line atau menjalankan script javascript di dalam sebuah bash mau itu mengunakan terminal jika penguna macOs, linux ataupun bisa juga mengunakan cmd bagi penguna windows 
+untuk menjalankan 
+untuk mengunakan atau mencoba repl langsung saja buka terminal atau cmd
+kemudian ketik 
+$ node 
+> maka akan otomatis seperti ini 
+disini kita bisa menjalankan script javascript contohnya 
+> const nama = "reza afri suhangga"
+setelah kita tekan enter maka tampilan nya akan seperti dibawah ini
+> 
+itu yang dinamakan loop, makanya namanya adalah repl atau bisa di artikan read(membaca perintah yang kita buat) eval(evaluasi perintah yang kita buat) print (mengembalikan hasil yang telah kita buat atau output) loop(mengulang kembali seperti tanda ">")
+terus dengan mengunakan repl kita juga bisa akses file dari luar caranya adalah dengan mengunakan perintah .load namafile.js 
+> .load coba.js 
+maka otomatis file coba.js bisa kita jalankan di repl kita 
+terus dengan reval kita juga bisa save kode yang kita buat atau semua aktivitas yang telah kita lakukan di repl tadi dengan cara 
+> .save namafile.js 
+> .exit // perintah tersebut untuk keluar 
+> .clear 
+> .break // untuk mengakhiri proses jika kita menjalankan suatu perintah dan tidak ingin melanjutkannya 
+
+
+#### Menjalankan file node #####
