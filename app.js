@@ -1,5 +1,4 @@
-const biodata = (nama) => {
-    return `${nama}`;
-}
+const fs = require("fs");
 
-console.log(biodata("reza afri suhangga"));
+// fs.mkdirSync("file");
+console.log(fs.readFileSync("app.js",'utf8'));
