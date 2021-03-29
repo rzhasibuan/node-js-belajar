@@ -107,3 +107,31 @@ maka hasil yang akan keluar adalah : reza afri suhangga
 
 begitu cara menjalankan file node js melalui command line node js 
 
+## Mengenal node module system pada node js
+pertama-tama kita harus mengenal terlebih dahulu apa itu modules, kalau di jabarkan secara umum modules adalah sekumpulan code yang dapat digunakan kembali, dengan antarmuka yang terdefinisi. atau untuk lebih spesifiknya lagi node modules adalah sebuah fungsionalitas yang simpel ataupun kompleks yang tersimpan di dalam sebuah file javascript yang dapat kita gunakan kembali pada aplikasi node js.
+
+### setiap module pada node js memiliki konteksnya masing-masing
+ seperti tidak bisa saling tercampur dengan modul lain pada lingkup global. kecuali kita memlakukan exports dan require 
+
+# ada 3 tipe modules yang dimiliki oleh nodeJS
+* core modules
+adalah modules yang dimiliki oleh node js di dalam librarynya 
+* local modules
+adalah modules yang kita bikin sendiri dan jika kita ingin mengunakannya kita harus melakukan 2 hal yang pertama melakukan exports dan juga require untuk mengunakan module nya 
+* third party modules 
+adalah sebuah modules yang dibikin oleh orang lain yang kemudian bisa kita gunakan atau biasa disebut npm
+
+
+### mengenal local module
+```
+<!-- file pertama -->
+function hello(nama){
+    return `hallo nama saya adalah ${nama}`
+}
+
+module.exports.hello = hello;
+fungsinya script di atas adalah untuk mengexports function hello menjadi local module yang nantinya bisa dipakai di file mana saja dengan mengunakan perintah require 
+
+<!-- file kedua -->
+
+```
