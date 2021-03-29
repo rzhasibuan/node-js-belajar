@@ -122,7 +122,7 @@ adalah modules yang kita bikin sendiri dan jika kita ingin mengunakannya kita ha
 adalah sebuah modules yang dibikin oleh orang lain yang kemudian bisa kita gunakan atau biasa disebut npm
 
 
-### mengenal local module
+### Mengenal local module
 ```
 <!-- file pertama -->
 function hello(nama){
@@ -133,5 +133,24 @@ module.exports.hello = hello;
 fungsinya script di atas adalah untuk mengexports function hello menjadi local module yang nantinya bisa dipakai di file mana saja dengan mengunakan perintah require 
 
 <!-- file kedua -->
+const hello = require("./filelocalmodule.js");
+fungsi di atas adalah untuk memanggil local module yang kita miliki
+
+console.log(hello.hello("reza"));
+mengunakan local module yang telah kita panggil tadi
+```
+
+### Mengenal Core module 
+untuk mengetahui core module pada node js bisa langsung masuk saja ke halaman documentasinya https://nodejs.org/en/docs/
+disini penulis hanya ingin mencontohkan beberapa core module saja.
+
+```
+<!-- app.js -->
+
+const fs = require("fs");
+<!-- perintah tersebut berfungsi memanggil core module fs atau file system -->
+
+
+
 
 ```
