@@ -150,7 +150,8 @@ disini penulis hanya ingin mencontohkan beberapa core module saja.
 const fs = require("fs");
 <!-- perintah tersebut berfungsi memanggil core module fs atau file system -->
 
-
-
-
+fs.mkdirSync("file");
+<!-- perintah di atas untuk membuat directory pada file system node js -->
+console.log(fs.readFileSync("app.js",'utf8'));
+<!-- perintah di atas untuk membaca isi sebuah file  -->
 ```
