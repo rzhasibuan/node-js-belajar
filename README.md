@@ -88,3 +88,22 @@ untuk mengakhirin sebuah aktivias yang sedang dilakukan
 ### .clear 
 untuk membersihkan sebuah aktivitas yang sedang dilakukan 
 
+## Menjalankan file node js melalui command line node js
+* untuk menjalankan file node js melalui command line node js pertama-tama kita harus membuat file js terlebih dahulu contohnya kita buat file app.js
+
+kemudian ketikkan script pada file node js yang telah kita buat tadi seperti dibawah ini 
+```
+const biodata = (nama) => {
+    return `${nama}`;
+}
+
+console.log(biodata("reza afri suhangga"));
+
+```
+
+kemudian buka terminal vscode dan jalankan perintah node app enter 
+
+maka hasil yang akan keluar adalah : reza afri suhangga 
+
+begitu cara menjalankan file node js melalui command line node js 
+
