@@ -4,11 +4,30 @@ const requestListener = (request, response) => {
   const { method } = request;
 
   if (method === "GET") {
-    response.end("<h1>Hello ini data dari hasil GET</h1>");
+    let body = [];
+
+    request.on("data", (chunk) => {
+      body.push(chunk);
+    });
+
+    request.on("end", () => {
+      body = Buffer.concat(body).toString();
+      response.end(`<h1>Hai, ini adalah data yang berhasil di tangkap:  ${body}! </h1>`);
+    });
   }
 
   if (method === "POST") {
-    response.end("<h1>Haii ini data dari hasil POST</h1>");
+    let body = [];
+
+    request.on("data", (chunk) => {
+      body.push(chunk);
+    });
+
+    request.on("end", () => {
+      body = Buffer.concat(body).toString();
+      const { name } = JSON.parse(body);
+      response.end(`<h1>Hai, ${name} data berhasil ditambahkan !!</h1>`);
+    });
   }
 
   if (method === "PUT") {
