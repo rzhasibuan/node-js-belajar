@@ -1,0 +1,20 @@
+{
+  "name": "node-js-belajar",
+  "version": "1.0.0",
+  "description": "## Apa itu Node.js  nodeJS adalah runtime aplikasi dimana kita bisa menjalankan kode javascript",
+  "main": "app.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rzhasibuan/node-js-belajar.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rzhasibuan/node-js-belajar/issues"
+  },
+  "homepage": "https://github.com/rzhasibuan/node-js-belajar#readme"
+}
