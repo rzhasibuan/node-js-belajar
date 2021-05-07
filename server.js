@@ -58,7 +58,6 @@ const requestListener = (request, response) => {
 
     }else{
       response.statusCode = 400;
-      response.end(`<h1>Halaman tidak dapat di akses mengunakan ${method} request !!</h1>`);
       response.end(JSON.stringify({
         message : `<h1>Halaman tidak dapat di akses mengunakan ${method} request!!</h1>`
       }))
